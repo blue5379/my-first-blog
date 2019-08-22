@@ -26,7 +26,7 @@ SECRET_KEY = '99l$mjdvo#1#p(*xj^n^($lk*7*j292w1@3o3z98-78)652h6e'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -123,3 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# ログインに成功したらトップに飛ぶ
+LOGIN_REDIRECT_URL = '/'
